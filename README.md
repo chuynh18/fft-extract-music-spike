@@ -21,7 +21,7 @@ It's likely that Steinway & Sons does this for Spirio-equipped pianos. Spirio is
 ## Known challenges
 * Musical instruments sound interesting because they have overtones. How do I recognize and remove them?
     * Overtones are integer multiples of the fundamental frequency. They are also lower in magnitude. So I can identify overtones by checking whether a given note is an integer multiple of a lower frequency. However, I need to be careful and compare the relative magnitudes of the notes (so that I don't reject the higher notes in chords and octaves).
-* Using the FFT is [as much an art as a science](https://download.ni.com/evaluation/pxi/Understanding%20FFTs%20and%20Windowing.pdf). I'm not sure on the specifics yet, but I know the [window size of the FFT](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/fftSize) is important.
+* Using the FFT is [as much an art as a science](https://download.ni.com/evaluation/pxi/Understanding%20FFTs%20and%20Windowing.pdf). I'm not sure on the specifics yet, but I know that [window size of the FFT](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/fftSize) is important.
 
 ## Approach
 * Start with what I know. Create an HTML page that just has one input to take in a file. Read in that file then create a new AudioContext and analyser. Just get the FFT working for starters and see what frequency information comes out.
