@@ -18,4 +18,6 @@ async function readFile(file) {
     return fileArrayBuffer;
 }
 
-const audioContext = new AudioContext();
+const audioContext = new OfflineAudioContext();
+const analyser = audioContext.createAnalyser();
+analyser.fftSize = 2048; // defaults to 2048, but putting it here in case I want to change it

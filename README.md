@@ -28,3 +28,12 @@ It's likely that Steinway & Sons does this for Spirio-equipped pianos. Spirio is
 * Play with FFT parameters to see what gets the cleanest data. I'll likely have to "slide" the window over the entire audio track and write out the frequency peaks.
 * Experiment with identifying overtones. I'll probably want to use music that I'm familiar with and follow along with the sheet music. This way, I know exactly what notes I'm supposed to keep or reject.
 * Once I get something robust, I can work to parse the data into a form that my digital piano project can play.
+
+
+# Potential Resources
+## Stack Overflow
+* [Is there a way to use the Web Audio API to sample audio faster than real-time?](https://stackoverflow.com/questions/8074152/is-there-a-way-to-use-the-web-audio-api-to-sample-audio-faster-than-real-time)
+* [FFT analysis with JavaScript: How to find a specific frequency?](https://stackoverflow.com/questions/32782505/fft-analysis-with-javascript-how-to-find-a-specific-frequency)
+* [How can I do FFT analysis of audio file in chrome without need for playback?](https://stackoverflow.com/questions/54726349/how-can-i-do-fft-analysis-of-audio-file-in-chrome-without-need-for-playback)
+## MDN
+* [OfflineAudioContext](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext)
